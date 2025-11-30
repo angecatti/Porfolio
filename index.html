@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>  
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Brand Manager</p>
+                <h1>Hi, i'm <span>Etimbi Zangue Ange</span></h1>
+            </div>
+        </div>
+        </div>
+        <!-- -----------about----------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/CEO.jpg">
+                      </div>
+                      <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I’m a lvl 3  Software Engineering student passionate about technology and creativity.
+Alongside my development projects, I’m the founder of Tasty Mood fast food, a food brand that combines flavor and originality.
+I love creating, innovating, and bringing ideas to life, whether in the digital world or the culinary one.</p>
+        
+<div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+        <div class="tab-contents active-tab" id="skills">
+    <ul>
+        <li><span>UI/UX</span><br>Canva,Tkinter,PyQt</li>
+        <li><span>Programming</span><br>Python,Java,c,HTML,CSS,JavaScript</li>
+        <li><span>Brand creation and management</span></li>
+        <li><span>Menu design and product presentation</span></li>
+        <li><span>Digital Marketing & content creation</span></li>
+    </ul>
+</div>
+        <div class="tab-contents" id="experience">
+    <ul>
+        <li><span>Founder&CEO of TASTY MOOD fast food<br>Yaounde,Cameroon/2025-Present</span><br>Created and Manage a food brand specialized in French tacos, Crepes and Mini pizzas.<br>Handle menu design, marketing, and customer relations.<br>Develop digital strategies to promote the brand online.</li>
+        <li><span>Software Engineering Student at ICT UNIVERSITY<br>Yaounde,Cameroon/2023-Present</span><br>Designed and developed applications using Python<br>Worked on web interfaces with HTML, CSS, and JavaScript.</li>
+    </ul>
+        </div>
+        <div class="tab-contents" id="education">
+    <ul>
+       <li><span>Bacgelor's in Sotfware Engineering<br>Yaounde,Cameroon/2023-Present</span><br>ICT UNIVERSITY</li>
+    </ul>
+                       </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+ <!-- ---------services---------- -->
+         <div id="services">
+            <div class="container">
+                 <h1 class="sub-title">My Services</h1>
+                 <div class="services-list">
+                      <div>
+                        <h2>Software Development</h2>
+                        <p>Design and Development of desktop and web applictions using modern technologies.</p>
+                      </div>   
+                      <div>
+                        <h2>UI/UX & Brand Desing</h2>
+                        <p>creation clean,user-friendly interfaces and branding visuals.</p>
+                      </div>   
+                      <div>
+                        <h2>Digital Marketing & Content Creation</h2>
+                        <p>Management of online presence and digital content design for personal brand.</p>
+                      </div>   
+                      <div>
+                        <h2>Culinary Branding</h2>
+                        <p>Menu design,visual identity, and creative presentation of food products.</p>
+                      </div>   
+                 </div>
+                 
+            </div>
+         </div>
+<!-- ---------portfolio-------- -->   
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/menu.jpg">
+            </div>
+            <div class="work">
+                <img src="images/french tacos.webp">
+            </div>
+            <div class="work">
+                <img src="images/laoded fries.webp">
+            </div>
+            <div class="work">
+                <img src="images/logo.jpg">
+            </div>
+        </div>
+    </div>
+ </div>    
+ <!-- ----------contact---------- -->  
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>palloetimbi@gmail.com</p>
+                <p>696843626</p>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+  </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classlist.add("active-tab");
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw-9PzBW5KerS7eQIx-oaO6p8uTW0T0Fir-dfJzDjM5c0yptWkV_67sCr7zAVyJ1t1B0g/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Sucessfully sent"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    </body>
+</html>
