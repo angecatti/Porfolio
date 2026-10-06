@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Etimbi Zangue Ange</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+        <!-- Bouton Menu Mobile -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <img src="images/logo.jpg" class="logo" alt="Tasty Mood Logo">
+                <ul id="nav-menu">
+                    <li><a href="#header" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#about" onclick="closeMenu()">About</a></li>
+                    <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>  
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p class="fade-in">Brand Manager & Software Developer</p>
+                <h1 class="fade-in-delay">Hi, I'm <span class="typed-text">Etimbi Zangue Ange</span></h1>
+                <a href="#about" class="cta-button fade-in-delay-2">Discover More</a>
+            </div>
+        </div>
+        </div>
+        
+        <!-- -----------about----------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <div class="image-container">
+                            <img src="images/CEO.jpg" alt="Etimbi Zangue Ange" class="profile-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                      </div>
+                      <div class="about-col-2">
+                        <h1 class="sub-title animate-on-scroll">About Me</h1>
+                        <p class="animate-on-scroll">I'm a level 3 Software Engineering student passionate about technology and creativity. Alongside my development projects, I'm the founder of Tasty Mood fast food, a food brand that combines flavor and originality. I love creating, innovating, and bringing ideas to life, whether in the digital world or the culinary one.</p>
+        
+<div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+        <div class="tab-contents active-tab" id="skills">
+    <ul>
+        <li><span>UI/UX</span><br>Canva, Tkinter, PyQt</li>
+        <li><span>Programming</span><br>Python, Java, C, HTML, CSS, JavaScript</li>
+        <li><span>Brand creation and management</span></li>
+        <li><span>Menu design and product presentation</span></li>
+        <li><span>Digital Marketing & content creation</span></li>
+    </ul>
+</div>
+        <div class="tab-contents" id="experience">
+    <ul>
+        <li><span>Founder & CEO of TASTY MOOD fast food<br>Yaounde, Cameroon / 2025-Present</span><br>Created and manage a food brand specialized in French tacos, Crepes and Mini pizzas.<br>Handle menu design, marketing, and customer relations.<br>Develop digital strategies to promote the brand online.</li>
+        <li><span>Software Engineering Student at ICT UNIVERSITY<br>Yaounde, Cameroon / 2023-Present</span><br>Designed and developed applications using Python<br>Worked on web interfaces with HTML, CSS, and JavaScript.</li>
+    </ul>
+        </div>
+        <div class="tab-contents" id="education">
+    <ul>
+       <li><span>Bachelor's in Software Engineering<br>Yaounde, Cameroon / 2023-Present</span><br>ICT UNIVERSITY</li>
+    </ul>
+                       </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+ <!-- ---------services---------- -->
+         <div id="services">
+            <div class="container">
+                 <h1 class="sub-title animate-on-scroll">My Services</h1>
+                 <div class="services-list">
+                      <div class="service-card animate-on-scroll">
+                        <div class="service-icon">💻</div>
+                        <h2>Software Development</h2>
+                        <p>Design and development of desktop and web applications using modern technologies.</p>
+                        <div class="service-hover-effect"></div>
+                      </div>   
+                      <div class="service-card animate-on-scroll">
+                        <div class="service-icon">🎨</div>
+                        <h2>UI/UX & Brand Design</h2>
+                        <p>Creation of clean, user-friendly interfaces and branding visuals.</p>
+                        <div class="service-hover-effect"></div>
+                      </div>   
+                      <div class="service-card animate-on-scroll">
+                        <div class="service-icon">📱</div>
+                        <h2>Digital Marketing & Content</h2>
+                        <p>Management of online presence and digital content design for personal brands.</p>
+                        <div class="service-hover-effect"></div>
+                      </div>   
+                      <div class="service-card animate-on-scroll">
+                        <div class="service-icon">🍔</div>
+                        <h2>Culinary Branding</h2>
+                        <p>Menu design, visual identity, and creative presentation of food products.</p>
+                        <div class="service-hover-effect"></div>
+                      </div>   
+                 </div>
+                 
+            </div>
+         </div>
+         
+<!-- ---------portfolio-------- -->   
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title animate-on-scroll">My Work</h1>
+        <div class="work-list">
+            <div class="work animate-on-scroll">
+                <img src="images/menu.jpg" alt="Tasty Mood Menu">
+                <div class="work-overlay">
+                    <h3>Menu Design</h3>
+                    <p>Professional menu for Tasty Mood</p>
+                </div>
+            </div>
+            <div class="work animate-on-scroll">
+                <img src="images/french tacos.webp" alt="French Tacos">
+                <div class="work-overlay">
+                    <h3>French Tacos</h3>
+                    <p>Signature dish photography</p>
+                </div>
+            </div>
+            <div class="work animate-on-scroll">
+                <img src="images/laoded fries.webp" alt="Loaded Fries">
+                <div class="work-overlay">
+                    <h3>Loaded Fries</h3>
+                    <p>Product photography & styling</p>
+                </div>
+            </div>
+            <div class="work animate-on-scroll">
+                <img src="images/logo.jpg" alt="Tasty Mood Logo">
+                <div class="work-overlay">
+                    <h3>Brand Logo</h3>
+                    <p>Tasty Mood identity design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>    
+ 
+ <!-- ----------contact---------- -->  
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left animate-on-scroll">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><span class="contact-icon">✉️</span> palloetimbi@gmail.com</p>
+                <p><span class="contact-icon">📱</span> +237 696 843 626</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" title="LinkedIn">💼</a>
+                    <a href="#" class="social-icon" title="GitHub">🔗</a>
+                    <a href="#" class="social-icon" title="Instagram">📷</a>
+                </div>
+            </div>
+            <div class="contact-right animate-on-scroll">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Send Message</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTop" onclick="scrollToTop()">↑</button>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+        <p>&copy; 2025 Etimbi Zangue Ange. All rights reserved. | Made with ❤️ in Cameroon</p>
+    </div>
+  </footer>
+
+<!-- JavaScript File -->
+<script src="script.js"></script>
+    </body>
+</html>
